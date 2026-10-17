@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FUMITAKE TAKAURA — AI Film Portfolio</title>
+<meta name="description" content="AI映像・AI画像のクリエイター。広告・CM、ドキュメンタリー、ウェディングムービーの制作。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Shippori+Mincho+B1:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--BUILD:BODY-START-->
+<header class="site-header">
+  <a class="brand" href="#top" data-site="name">FUMITAKE TAKAURA</a>
+  <nav class="nav" aria-label="メインメニュー">
+    <a href="#works">Works</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- 開いた瞬間に一斉に動き出す壁 -->
+  <section class="hero" aria-label="トップ">
+    <div class="hero__stage">
+      <div class="wall hero__wall" id="hero-wall"></div>
+      <p class="chapter mono" id="chapter" aria-live="polite"><span id="chapter-no">01</span><span class="chapter__total">/ <span id="chapter-total">04</span></span><span class="chapter__name" id="chapter-name">Ocean</span></p>
+      <button class="wall-pause" type="button" id="wall-pause" aria-pressed="false" aria-label="映像を一時停止"><span class="wall-pause__icon" aria-hidden="true"></span></button>
+    </div>
+    <div class="hero__panel">
+      <div class="hero__intro">
+        <h1 class="hero__name" data-site="name">FUMITAKE TAKAURA</h1>
+        <p class="hero__role"><span class="hero__name-ja" data-site="nameJa">高浦文武</span><span class="mono" data-site="role">AI Film &amp; Image</span></p>
+        <p class="hero__lead">AIで生成した映像で、広告・ドキュメンタリー・ウェディングムービーを制作しています。ロケが難しい景色や生き物も、企画から編集まで一人で仕上げます。</p>
+        <div class="hero__actions">
+          <button class="btn btn--solid btn--reel" type="button" id="open-reel"><span aria-hidden="true">▶</span>Showreel</button>
+          <a class="btn" href="#works">作品を見る</a>
+          <a class="btn" href="#contact">相談する</a>
+        </div>
+      </div>
+      <nav class="hero__index" aria-label="作品のカテゴリー">
+        <p class="eyebrow mono">Works</p>
+        <ul class="index-list" id="hero-categories"></ul>
+      </nav>
+      <div class="hero__index">
+        <p class="eyebrow mono">Services</p>
+        <ul class="index-list">
+          <li><a href="#services"><span>広告・CM</span><span class="mono">15–60s</span></a></li>
+          <li><a href="#services"><span>ドキュメンタリー</span><span class="mono">30s–3min</span></a></li>
+          <li><a href="#services"><span>ウェディングムービー</span><span class="mono">1–5min</span></a></li>
+          <li><a href="#services"><span>SNS・縦型ショート</span><span class="mono">9:16</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用途ごとのブロック（main.js が作る） -->
+  <div id="works" class="works"></div>
+
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="section__head">
+      <p class="eyebrow mono">Services</p>
+      <h2 class="section__title" id="services-title">ご依頼いただけること</h2>
+      <p class="section__note">横長16:9のほか、スマホ向けの縦型9:16、Instagram向けの1:1・4:5にも対応します。</p>
+    </div>
+    <div class="svc-list">
+      <article class="svc">
+        <h3 class="svc__name">広告・CM</h3>
+        <p class="svc__desc">商品やブランドの世界観を、ロケ撮影なしで映像にします。Web広告、LPのファーストビュー、展示会のループ映像に。</p>
+        <dl class="svc__spec mono"><div><dt>Length</dt><dd>15–60 sec</dd></div><div><dt>Ratio</dt><dd>16:9 · 9:16 · 1:1</dd></div></dl>
+        <a class="svc__link" href="#cat-ad">作品を見る<span aria-hidden="true">→</span></a>
+      </article>
+      <article class="svc">
+        <h3 class="svc__name">ドキュメンタリー・ブランドストーリー</h3>
+        <p class="svc__desc">自然や生き物の紹介、土地や事業の成り立ち。撮影が難しい場所や時代の情景も描けます。</p>
+        <dl class="svc__spec mono"><div><dt>Length</dt><dd>30 sec – 3 min</dd></div><div><dt>Ratio</dt><dd>16:9</dd></div></dl>
+        <a class="svc__link" href="#cat-documentary">作品を見る<span aria-hidden="true">→</span></a>
+      </article>
+      <article class="svc">
+        <h3 class="svc__name">ウェディング・記念日ムービー</h3>
+        <p class="svc__desc">おふたりの物語を、美しい風景とともに。オープニング、プロフィール、エンドロールに。</p>
+        <dl class="svc__spec mono"><div><dt>Length</dt><dd>1–5 min</dd></div><div><dt>Ratio</dt><dd>16:9</dd></div></dl>
+        <a class="svc__link" href="#contact">相談する<span aria-hidden="true">→</span></a>
+      </article>
+      <article class="svc">
+        <h3 class="svc__name">SNS・ショート動画</h3>
+        <p class="svc__desc">Instagram リール、TikTok、YouTube ショート向けの縦型動画。最初の3秒で目を止める構成にします。</p>
+        <dl class="svc__spec mono"><div><dt>Length</dt><dd>6–30 sec</dd></div><div><dt>Ratio</dt><dd>9:16 · 4:5</dd></div></dl>
+        <a class="svc__link" href="#contact">相談する<span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section process" aria-labelledby="process-title">
+    <div class="section__head">
+      <p class="eyebrow mono">Process</p>
+      <h2 class="section__title" id="process-title">制作の流れ</h2>
+      <p class="section__note">動画にする前に、静止画で絵を確認していただきます。完成後のイメージ違いが起きにくい進め方です。</p>
+    </div>
+    <ol class="steps">
+      <li><span class="steps__no mono">01</span><h3>ヒアリング</h3><p>目的、届けたい相手、使う場所、尺と画面比率を伺います。</p></li>
+      <li><span class="steps__no mono">02</span><h3>構成の設計</h3><p>伝えたいことを一つに絞り、色・光・カット割りを設計します。</p></li>
+      <li class="is-key"><span class="steps__no mono">03</span><h3>静止画で確認</h3><p>各カットを静止画で生成してお見せします。ここで方向性を固めます。</p><span class="steps__tag mono">Key step</span></li>
+      <li><span class="steps__no mono">04</span><h3>映像化と編集</h3><p>確定した静止画を動かし、ナレーション・音楽・テロップを入れて仕上げます。</p></li>
+      <li><span class="steps__no mono">05</span><h3>納品・修正</h3><p>用途に合わせた形式で納品します。修正回数は事前に取り決めます。</p></li>
+    </ol>
+  </section>
+
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact__grid">
+      <div class="contact__intro">
+        <p class="eyebrow mono">Contact</p>
+        <h2 class="contact__title" id="contact-title">映像のご相談、<br>お気軽にどうぞ。</h2>
+        <p class="section__note">企画が固まっていなくても大丈夫です。使う場所と、伝えたいことを教えてください。</p>
+      </div>
+      <div class="contact__card">
+        <p class="contact__label mono">CrowdWorks</p>
+        <a class="btn btn--solid contact__cta" id="contact-cw" href="https://crowdworks.jp/" target="_blank" rel="noopener">クラウドワークスで相談する<span aria-hidden="true">→</span></a>
+        <p class="contact__small">ご依頼・お見積もりは、クラウドワークスのメッセージで承ります。</p>
+        <div class="contact__group" id="contact-mail" hidden>
+          <p class="contact__label mono">Mail</p>
+          <p class="contact__address" id="contact-email" data-site="email"></p>
+          <button class="btn btn--small" type="button" id="copy-email">コピー</button>
+        </div>
+        <div class="contact__group" id="contact-more" hidden>
+          <p class="contact__label mono">Platforms &amp; SNS</p>
+          <ul class="contact__links" id="contact-links"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year">2026</span> <span data-site="name">FUMITAKE TAKAURA</span></p>
+  <p class="mono">All works are AI-generated.</p>
+</footer>
+
+<dialog class="reel" id="reel" aria-label="ショーリール">
+  <header class="workpage__bar">
+    <p class="workpage__crumb mono"><span>Showreel</span><span class="workpage__pos" id="reel-meta"></span></p>
+    <button class="workpage__close mono" type="button" id="reel-close">Close<span aria-hidden="true">×</span></button>
+  </header>
+  <div class="reel__stage" id="reel-stage"></div>
+</dialog>
+
+<dialog class="workpage" id="viewer" aria-labelledby="viewer-title">
+  <header class="workpage__bar">
+    <p class="workpage__crumb mono"><span id="viewer-cat"></span><span class="workpage__pos" id="viewer-pos"></span></p>
+    <button class="workpage__close mono" type="button" id="viewer-close">Close<span aria-hidden="true">×</span></button>
+  </header>
+  <div class="workpage__inner">
+    <div class="workpage__media" id="viewer-media"></div>
+    <div class="workpage__body">
+      <div class="workpage__intro">
+        <h2 class="workpage__title" id="viewer-title"></h2>
+        <p class="workpage__en" id="viewer-en"></p>
+        <p class="workpage__desc" id="viewer-desc"></p>
+        <div class="workpage__notes" id="viewer-notes"></div>
+      </div>
+      <dl class="workpage__specs mono" id="viewer-specs"></dl>
+    </div>
+    <section class="workpage__cuts" aria-labelledby="viewer-cuts-title">
+      <div class="workpage__cuts-head">
+        <h3 class="workpage__label mono" id="viewer-cuts-title">Cuts</h3>
+        <span class="workpage__hint mono" id="viewer-cutcount"></span>
+      </div>
+      <ol class="filmstrip" id="viewer-strip"></ol>
+    </section>
+    <nav class="workpage__nav" aria-label="ほかの作品">
+      <button class="nextcard" type="button" id="viewer-prev"></button>
+      <button class="nextcard nextcard--next" type="button" id="viewer-next"></button>
+    </nav>
+  </div>
+</dialog>
+<!--BUILD:BODY-END-->
+
+<script src="works.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

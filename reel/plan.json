@@ -1,0 +1,27 @@
+{
+  "bpm": 90,
+  "fps": 30,
+  "size": [1920, 1080],
+  "note": "beats は拍数（90BPMで1拍=20コマ=0.667秒）。start は元の本編（works/<id>/video.mp4）の秒。zoom は寄せて画面の端の文字を外に出す（1.25 = 1.25倍、anchor は残す側）",
+  "shots": [
+    { "work": "moss-forest",       "start": 0.3,  "beats": 8, "fadeIn": 1.2, "label": "霧の山並み" },
+    { "work": "moss-forest",       "start": 7.2,  "beats": 4, "label": "巨木" },
+    { "work": "madagascar",        "start": 0.6,  "beats": 4, "label": "カメレオン" },
+    { "work": "abundant-sea",      "start": 11.0, "beats": 4, "label": "サメ" },
+    { "work": "abundant-sea",      "start": 0.8,  "beats": 4, "label": "ウミガメ" },
+    { "work": "time-of-the-earth", "start": 0.5,  "beats": 4, "label": "窓辺の男性" },
+    { "work": "time-of-the-earth", "start": 6.2,  "beats": 2, "label": "腕時計を着ける手" },
+    { "work": "time-of-the-earth", "start": 16.0, "beats": 2, "label": "腕時計" },
+    { "work": "tsukiakari-onsen",  "start": 20.2, "beats": 4, "zoom": 1.25, "anchor": "bottom-right", "label": "夜の温泉街" },
+    { "work": "tsukiakari-onsen",  "start": 13.8, "beats": 4, "zoom": 1.25, "anchor": "bottom-right", "label": "露天風呂" },
+    { "work": "abundant-sea",      "start": 21.8, "beats": 2, "label": "クラゲ" },
+    { "work": "moss-forest",       "start": 21.5, "beats": 2, "label": "葉のしずく" },
+    { "work": "unwind-in-nature",  "start": 7.5,  "beats": 2, "label": "島の空撮" },
+    { "work": "unwind-in-nature",  "start": 26.0, "beats": 2, "label": "ウミガメと泳ぐ" },
+    { "work": "madagascar",        "start": 7.0,  "beats": 2, "label": "ヘラオヤモリ" },
+    { "work": "tsukiakari-onsen",  "start": 27.0, "beats": 2, "zoom": 1.25, "anchor": "bottom-right", "label": "橋と温泉街" },
+    { "work": "unwind-in-nature",  "start": 0.5,  "beats": 4, "label": "島の朝日" },
+    { "work": "madagascar",        "start": 29.0, "beats": 8, "fadeOut": 1.3, "label": "夕暮れの森" }
+  ],
+  "endCard": { "beats": 6, "name": "FUMITAKE TAKAURA", "sub": "AI Film & Image" }
+}
