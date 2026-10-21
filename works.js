@@ -22,7 +22,7 @@ window.SITE = {
   role: "AI Film & Image",
   // 依頼の窓口。まずはクラウドワークスだけ（プロフィールのURLに差し替える）
   crowdworks: "https://crowdworks.jp/",
-  email: "",                         // 公開用のメールアドレス。空のあいだはサイトに出ない
+  email: "takaura.studio@gmail.com", // 公開用のメールアドレス。空のあいだはサイトに出ない
   links: [                           // ほかの窓口・SNS。空のあいだはサイトに出ない
     // { label: "ココナラ", url: "https://coconala.com/" },
     // { label: "ランサーズ", url: "https://www.lancers.jp/" },
